@@ -19,6 +19,14 @@ export function SportJournalTopOffersModal({ sites }: TopOffersModalProps) {
     }
   }, [sites])
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsOpen(true)
+    }, 8000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent className="w-[90vw] max-w-[480px] p-0 bg-journal-white border-2 border-journal-navy shadow-2xl rounded-lg">
