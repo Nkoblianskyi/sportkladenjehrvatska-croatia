@@ -16,31 +16,38 @@ export function SportJournalHero() {
   }
 
   return (
-    <section className="relative overflow-hidden border-b border-journal-border" style={{ minHeight: "280px" }}>
-      <div className="container mx-auto sm:max-w-[1200px] relative z-10 px-4 h-full flex items-center py-12 bg-black/20">
+    <section className="relative overflow-hidden border-b border-journal-border" style={{ minHeight: "200px" }}>
+      <div className="container mx-auto sm:max-w-[1200px] relative z-10 px-4 h-full flex items-center py-6 md:py-12 bg-black/20">
         <div className="w-full">
-          <div className="flex flex-col items-center justify-center gap-6 text-center">
+          <div className="flex flex-col items-center justify-center gap-3 md:gap-6 text-center">
             {/* Main heading */}
             <div className="max-w-4xl">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-3 leading-tight text-balance drop-shadow-lg">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-serif font-bold mb-2 md:mb-3 leading-tight text-balance drop-shadow-lg">
                 <span className="text-red-600">Stručne</span> <span className="text-white">Analize</span>{" "}
                 <span className="text-blue-600">Sportskog Klađenja</span>
               </h1>
-              <p className="text-base md:text-lg text-white/90 leading-relaxed drop-shadow-md">
+              <p className="text-sm md:text-lg text-white/90 leading-relaxed drop-shadow-md">
                 Profesionalne recenzije i objektivne ocjene platformi za sportsko klađenje u Hrvatskoj
               </p>
             </div>
 
             {/* Trust badges in horizontal row */}
-            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
-              <div className="flex items-center gap-2">
-                <Image src="/flag.png" alt="Sport Journal Logo" width={40} height={40} />
-                <span className="text-sm text-white font-semibold whitespace-nowrap drop-shadow-md">Licencirano</span>
+            <div className="flex flex-wrap items-center justify-center gap-3 md:gap-8">
+              <div className="flex items-center gap-1.5 md:gap-2">
+                <Image src="/flag.png" alt="Sport Journal Logo" width={32} height={32} className="md:w-10 md:h-10" />
+                <span className="text-xs md:text-sm text-white font-semibold whitespace-nowrap drop-shadow-md">
+                  Licencirano
+                </span>
               </div>
 
-              <div className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded bg-blue-500/20 flex items-center justify-center border border-blue-400/50">
-                  <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center gap-1.5 md:gap-2">
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded bg-blue-500/20 flex items-center justify-center border border-blue-400/50">
+                  <svg
+                    className="w-4 h-4 md:w-5 md:h-5 text-blue-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -49,16 +56,16 @@ export function SportJournalHero() {
                     />
                   </svg>
                 </div>
-                <span className="text-sm text-white font-semibold whitespace-nowrap drop-shadow-md">
+                <span className="text-xs md:text-sm text-white font-semibold whitespace-nowrap drop-shadow-md">
                   Stručne recenzije
                 </span>
               </div>
 
-              <div className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded bg-red-500/20 flex items-center justify-center border border-red-400/50">
-                  <span className="text-red-400 font-bold text-base">18+</span>
+              <div className="flex items-center gap-1.5 md:gap-2">
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded bg-red-500/20 flex items-center justify-center border border-red-400/50">
+                  <span className="text-red-400 font-bold text-sm md:text-base">18+</span>
                 </div>
-                <span className="text-sm text-white font-semibold whitespace-nowrap drop-shadow-md">
+                <span className="text-xs md:text-sm text-white font-semibold whitespace-nowrap drop-shadow-md">
                   Odgovorno klađenje
                 </span>
               </div>
