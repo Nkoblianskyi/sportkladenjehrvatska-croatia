@@ -96,6 +96,18 @@ export function SportJournalFooter() {
               </div>
             </Link>
 
+
+            <Link
+              href="https://www.hupis.hr/klok"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform hover:scale-110"
+            >
+              <div className="relative w-[100px] h-[40px] md:w-[120px] md:h-[48px] p-3 rounded bg-white hover:bg-white/90 shadow-lg">
+                <Image src="/hupis.png" alt="Hupis" fill className="object-contain" />
+              </div>
+            </Link>
+
             <Link
               href="https://www.gambleaware.org/"
               target="_blank"
@@ -107,14 +119,15 @@ export function SportJournalFooter() {
               </div>
             </Link>
 
+
             <Link
-              href="https://www.hupis.hr/klok"
+              href="https://www.pbsvi.hr/strucni-programi-i-klub/kocka-terapijsko-rehabilitacijski-program-za-ovisnost-o-kockanju/"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-transform hover:scale-110"
             >
               <div className="relative w-[100px] h-[40px] md:w-[120px] md:h-[48px] p-3 rounded bg-white hover:bg-white/90 shadow-lg">
-                <Image src="/hupis.png" alt="Hupis" fill className="object-contain" />
+                <Image src="/pbsvi.svg" alt="PBSVI" fill className="object-contain" />
               </div>
             </Link>
 
@@ -129,16 +142,7 @@ export function SportJournalFooter() {
               </div>
             </Link>
 
-            <Link
-              href="https://www.pbsvi.hr/strucni-programi-i-klub/kocka-terapijsko-rehabilitacijski-program-za-ovisnost-o-kockanju/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-transform hover:scale-110"
-            >
-              <div className="relative w-[100px] h-[40px] md:w-[120px] md:h-[48px] p-3 rounded bg-white hover:bg-white/90 shadow-lg">
-                <Image src="/pbsvi.svg" alt="PBSVI" fill className="object-contain" />
-              </div>
-            </Link>
+
           </div>
         </div>
 
